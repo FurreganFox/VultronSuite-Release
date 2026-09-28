@@ -1,0 +1,3 @@
+# Prevents "blank" issues without a template - forces the
+# Bug Report / Feature Request choice.
+blank_issues_enabled: false
