@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/logo.png" alt="Vultron Suite Logo" width="480">
+</p>
+
 # Vultron Suite
 
 Public repository for **bug reports**, **feature requests**, the
