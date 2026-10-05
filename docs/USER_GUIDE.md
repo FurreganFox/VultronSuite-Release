@@ -1,6 +1,6 @@
 # Vultron Suite – User Guide / Benutzerhandbuch
 
-Valid for version **1.0.7** / Gültig für Version **1.0.7**
+Valid from version **1.0.8** / Gültig ab Version **1.0.8**
 
 - [English](#english)
 - [Deutsch](#deutsch)
@@ -62,7 +62,7 @@ Click **Start**. If the license check fails you stay on the Setup page and can f
 - Toggle **Skip the settle wait between steps** to remove the pause (about 20 s) between steps.
 
 Step editor options: method file, label (used in file names and result titles), OCP equilibration (s),
-timeout (s), *Skip the settle wait before this step*, *Also show a pop-up when this step finishes*,
+timeout (s), *Skip the settle wait before this step*, *Show a notification when this step finishes*,
 and *Enable auto-save for this step* (saves `.idf`/`.csv`; new `.idf` files carry their real name, e.g. `700 °C.idf`).
 
 ### Vultron Visualize
@@ -79,17 +79,17 @@ The two icon buttons on the start page open the **Config Builder** (most importa
 and the **Test Rig Editor** (edit/create test rig entries). In the HTML dashboard, automatically
 detected events can be renamed, removed or added; every change is recorded in a tamper-evident log.
 
-### Notifications (since 1.0.7)
+### Notifications
 
-A Windows notification card appears (bottom right) when:
+Notifications appear only as a Windows notification card (bottom right) - there are no extra pop-up windows:
 
-| Event | Notification | Extra pop-up |
-|---|---|---|
-| Acquire: queue step finished | yes | only if enabled for that step |
-| Acquire: whole queue finished / aborted | yes | always |
-| Acquire: queue ends with an error | yes | yes |
-| Visualize: analysis finished (or with errors) | yes | no |
-| License problems | yes | existing license notices only |
+| Event | Notification |
+|---|---|
+| Acquire: queue step finished / aborted / skipped | yes - can be switched on/off per step in the step editor (default: on) |
+| Acquire: whole queue finished / aborted | yes, always |
+| Acquire: queue ends with an error | yes, always |
+| Visualize: analysis finished (or with errors) | yes |
+| License problems | yes (in addition to the notices already shown in the program) |
 
 If no card appears, check Windows notification settings (including Focus/Do not disturb).
 
@@ -167,7 +167,7 @@ kannst den Schlüssel korrigieren.
 - Schalter **Skip the settle wait between steps** entfernt die Pause (ca. 20 s) zwischen den Schritten.
 
 Optionen im Schritt-Editor: Methodendatei, Label (für Dateinamen und Ergebnistitel), OCP
-equilibration (s), Timeout (s), *Skip the settle wait before this step*, *Also show a pop-up when
+equilibration (s), Timeout (s), *Skip the settle wait before this step*, *Show a notification when
 this step finishes* und *Enable auto-save for this step* (speichert `.idf`/`.csv`; neue
 `.idf`-Dateien tragen den echten Namen, z. B. `700 °C.idf`).
 
@@ -186,17 +186,17 @@ und den **Test Rig Editor** (Rig-Einträge bearbeiten/anlegen). Im HTML-Dashboar
 automatisch erkannte Ereignisse umbenennen, entfernen oder ergänzen; jede Änderung wird
 manipulationssicher protokolliert.
 
-### Benachrichtigungen (seit 1.0.7)
+### Benachrichtigungen
 
-Unten rechts erscheint eine Windows-Benachrichtigungskarte bei:
+Benachrichtigungen erscheinen nur als Windows-Karte unten rechts – es gibt keine zusätzlichen Pop-up-Fenster:
 
-| Ereignis | Benachrichtigung | Zusätzliches Pop-up |
-|---|---|---|
-| Acquire: Queue-Schritt fertig | ja | nur wenn für den Schritt aktiviert |
-| Acquire: ganze Queue fertig / abgebrochen | ja | immer |
-| Acquire: Queue endet mit Fehler | ja | ja |
-| Visualize: Analyse fertig (oder mit Fehlern) | ja | nein |
-| Lizenzprobleme | ja | nur die bereits vorhandenen Lizenzhinweise |
+| Ereignis | Benachrichtigung |
+|---|---|
+| Acquire: Queue-Schritt fertig / abgebrochen / übersprungen | ja – pro Schritt im Schritt-Editor ein-/ausschaltbar (Standard: an) |
+| Acquire: ganze Queue fertig / abgebrochen | ja, immer |
+| Acquire: Queue endet mit Fehler | ja, immer |
+| Visualize: Analyse fertig (oder mit Fehlern) | ja |
+| Lizenzprobleme | ja (zusätzlich zu den bereits vorhandenen Hinweisen im Programm) |
 
 Erscheint keine Karte, die Windows-Benachrichtigungseinstellungen prüfen (auch Fokus/Nicht stören).
 

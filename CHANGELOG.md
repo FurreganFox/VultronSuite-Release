@@ -3,6 +3,52 @@
 All notable changes to Vultron Acquire and Vultron Visualize.
 / Alle nennenswerten Änderungen an Vultron Acquire und Vultron Visualize.
 
+## [Acquire 1.0.8] - [Visualize 1.0.8] - Unreleased
+
+### Changed / Geändert
+- Notifications are now shown only as a Windows notification card
+  (bottom right); the extra pop-up windows were removed. Acquire: a
+  notification for each queue step can be switched on/off per step in the
+  step editor ("Show a notification when this step finishes", default on;
+  replaces "Also show a pop-up ..."). The end of the whole queue and
+  queue errors always show a notification.
+  / Benachrichtigungen erscheinen jetzt nur noch als Windows-Karte (unten
+  rechts); die zusätzlichen Pop-up-Fenster entfallen. Acquire: Die
+  Benachrichtigung für jeden Queue-Schritt lässt sich pro Schritt im
+  Schritt-Editor ein-/ausschalten ("Show a notification when this step
+  finishes", Standard: an; ersetzt "Also show a pop-up ..."). Ende der
+  gesamten Queue und Queue-Fehler zeigen immer eine Benachrichtigung.
+
+### Fixed / Behoben
+- Saving a new license key in the license pop-up now takes effect
+  immediately (Acquire and Visualize) - no more "server unreachable"
+  messages until a restart. A rejected key no longer stays saved and no
+  longer closes Acquire.
+  / Ein neuer Lizenzschlüssel im Lizenz-Pop-up wirkt jetzt sofort
+  (Acquire und Visualize) - keine "Server nicht erreichbar"-Meldungen mehr
+  bis zum Neustart. Ein abgelehnter Schlüssel bleibt nicht gespeichert und
+  schließt Acquire nicht mehr.
+- If the license server no longer knows a running session (e.g. after
+  standby), the program now claims it again automatically instead of
+  counting down an outage.
+  / Kennt der Lizenzserver eine laufende Sitzung nicht mehr (z. B. nach
+  Standby), beansprucht das Programm sie automatisch neu, statt einen
+  Ausfall herunterzuzählen.
+- "Update available" is never shown twice at the same time (Acquire and
+  Visualize).
+  / "Update available" erscheint nie mehr doppelt gleichzeitig (Acquire
+  und Visualize).
+- Acquire: when a Current-Voltage monitoring recording stops, the Ivium
+  driver connection is now restarted automatically (device disconnect,
+  driver reopen, reconnect - what stopping and restarting with the power
+  button does by hand). Logging pauses for a few seconds and resumes on its
+  own (mitigation for #1).
+  / Acquire: Wenn eine Current-Voltage-Aufnahme endet, wird die
+  Ivium-Treiberverbindung automatisch neu gestartet (Gerät trennen, Treiber
+  neu öffnen, neu verbinden - das, was das Aus- und Einschalten per
+  Power-Button von Hand bewirkt). Das Logging pausiert einige Sekunden und
+  läuft von selbst weiter (Abmilderung für #1).
+
 ## [Acquire 1.0.7] - [Visualize 1.0.7] - 2026-10-05
 
 ### Added / Neu
