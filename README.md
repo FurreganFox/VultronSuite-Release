@@ -20,6 +20,11 @@ The current installer is available under [Releases](../../releases).
 Please use [Issues](../../issues) - there are templates for bug
 reports and feature requests.
 
+## User guide
+
+How to install and operate Vultron Acquire and Vultron Visualize:
+[docs/USER_GUIDE.md](./docs/USER_GUIDE.md).
+
 ## Changelog
 
 See [CHANGELOG.md](./CHANGELOG.md).
@@ -44,6 +49,11 @@ Die jeweils aktuelle Installer-Version findest du unter
 
 Bitte über [Issues](../../issues) - es gibt dort passende Vorlagen für
 Bug-Reports und Feature-Requests.
+
+### Benutzerhandbuch
+
+Installation und Bedienung von Vultron Acquire und Vultron Visualize:
+[docs/USER_GUIDE.md](./docs/USER_GUIDE.md#deutsch).
 
 ### Changelog
 
