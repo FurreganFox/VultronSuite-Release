@@ -3,7 +3,7 @@
 All notable changes to Vultron Acquire and Vultron Visualize.
 / Alle nennenswerten Änderungen an Vultron Acquire und Vultron Visualize.
 
-## [Acquire 1.0.8] - [Visualize 1.0.8] - Unreleased
+## [Acquire 1.0.8] - [Visualize 1.0.8] - 2026-10-07
 
 ### Changed / Geändert
 - Notifications are now shown only as a Windows notification card
